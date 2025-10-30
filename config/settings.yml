@@ -1,0 +1,4 @@
+plugins:
+  reply_to_view_enabled:
+    default: true
+    client: true

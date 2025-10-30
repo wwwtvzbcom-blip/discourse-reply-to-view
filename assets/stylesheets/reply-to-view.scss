@@ -1,0 +1,51 @@
+.reply-to-view-hidden {
+  background: var(--primary-very-low);
+  border: 2px dashed var(--primary-low);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  text-align: center;
+  
+  .reply-to-view-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+    i.fa-lock {
+      font-size: 24px;
+      color: var(--primary-medium);
+    }
+  }
+  
+  .reply-to-view-button {
+    margin-top: 10px;
+  }
+}
+
+.reply-to-view-visible {
+  background: var(--success-low);
+  border-left: 4px solid var(--success);
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-radius: 4px;
+  
+  .reply-to-view-notice {
+    font-size: 0.9em;
+    color: var(--success);
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+}
+
+// 移动端适配
+@media screen and (max-width: 600px) {
+  .reply-to-view-hidden {
+    padding: 15px;
+    margin: 10px 0;
+    
+    .reply-to-view-message {
+      gap: 8px;
+    }
+  }
+}
